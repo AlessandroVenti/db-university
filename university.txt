@@ -19,7 +19,7 @@ NOTE: come detto in classe, in caso di ambiguità, cercare di immaginare una pos
 	riconoscimenti: VARCHAR(128); NOT NULLABLE
 	rating_digitale: TINYINT; NULLABLE
 	requisiti: TEXT; NOT NULLABLE
-	sede_fisica: VARCHAR(255); NOT NULLABLE;
+	sede_fisica: VARCHAR(255); NOT NULLABLE
 	contatti: VARCHAR(16); NOT NULLABLE
 
 - CORSO LAUREA
@@ -51,19 +51,19 @@ NOTE: come detto in classe, in caso di ambiguità, cercare di immaginare una pos
 
 	materia: VARCHAR(23); NOT NULLABLE
 	nome: VARCHAR (23) ; NOT NULLABLE;
-	cognome: VARCHAR (23) ; NOT NULLABLE;
-	modalità_insegnamento: VARCHAR (128) ; NULLABLE;
-	indirizzo_residenza: VARCHAR (255) ; NOT NULLABLE;
+	cognome: VARCHAR (23) ; NOT NULLABLE
+	modalità_insegnamento: VARCHAR (128) ; NULLABLE
+	indirizzo_residenza: VARCHAR (255) ; NOT NULLABLE
 	riconoscimenti: TEXT; NULLABLE
-	turni_lezioni: VARCHAR (200) ; NOT NULLABLE;
-	corsi_gestiti: VARCHAR (125) ; NOT NULLABLE;
+	turni_lezioni: VARCHAR (200) ; NOT NULLABLE
+	corsi_gestiti: VARCHAR (125) ; NOT NULLABLE
 
 - APPELLO:
 	
-	id_studente: INT; NOT NULLABLE
-	nome_Studente: VARCHAR (23) ; NOT NULLABLE;
-	cognome_Studente: VARCHAR (23) ; NOT NULLABLE;
-	materia: VARCHAR (12) ; NOT NULLABLE;
+	id_studente: INT; NOT NULLABLE(PRIMARY KEY)
+	nome_Studente: VARCHAR (23) ; NOT NULLABLE
+	cognome_Studente: VARCHAR (23) ; NOT NULLABLE
+	materia: VARCHAR (12) ; NOT NULLABLE
 	punteggio: TINYINT; NOT NULLABLE
 
 - STUDENTE
@@ -71,8 +71,8 @@ NOTE: come detto in classe, in caso di ambiguità, cercare di immaginare una pos
 	nome: VARCHAR (23) ; NOT NULLABLE;
 	cognome: VARCHAR (23) ; NOT NULLABLE;
 	data_nascita: DATE; NOT NULLABLE;
-	luogo_nascita: VARCHAR(23); NOT NULLABLE;
-	indirizzo_residenza: VARCHAR (128) ; NOT NULLABLE;
+	luogo_nascita: VARCHAR(23); NOT NULLABLE
+	indirizzo_residenza: VARCHAR (128) ; NOT NULLABLE
 	contatti: VARCHAR(36); NOT NULLABLE
 	carta_identità: VARCHAR(255); NOT NULLABLE
 	patente: VARCHAR(255); NOT NULLABLE
