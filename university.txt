@@ -14,79 +14,80 @@ NOTE: come detto in classe, in caso di ambiguità, cercare di immaginare una pos
 
 - DIPARTIMENTO
 
-	Facoltà: VARCHAR(32) ; NOT NULLABLE
-	Descrizione: TEXT ; NOT NULLABLE
-	Riconoscimenti: VARCHAR(128); NOT NULLABLE
-	Rating_digitale: TINYINT; NULLABLE
-	Requisiti: TEXT; NOT NULLABLE
-	Sede_fisica: VARCHAR(255); NOT NULLABLE;
-	Contatti: VARCHAR(16); NOT NULLABLE
+	facoltà: VARCHAR(32) ; NOT NULLABLE
+	descrizione: TEXT ; NOT NULLABLE
+	riconoscimenti: VARCHAR(128); NOT NULLABLE
+	rating_digitale: TINYINT; NULLABLE
+	requisiti: TEXT; NOT NULLABLE
+	sede_fisica: VARCHAR(255); NOT NULLABLE;
+	contatti: VARCHAR(16); NOT NULLABLE
 
 - CORSO LAUREA
 
-	Modalità_laurea: TEXT; NOT NULLABLE
-	Requisiti_didattici: TEXT; NOT NULLABLE
-	Requisiti_temporali: VARCHAR(64); NOT NULLABLE
-	Punteggio_massimo: TINYINT; NOT NULLABLE
-	Punteggio_minimo: TINYINT; NOT NULLABLE
-	Sede fisica: VARCHAR(128); NOT NULLABLE
-	Materiale_didattico_richiesto: TEXT; NOT NULLABLE
-	Minimo_ore_richieste: TINYINT; NOT NULLABLE
-	Media_punteggio_richiesta: TINYINT; NOT NULLABLE
+	modalità_laurea: TEXT; NOT NULLABLE
+	requisiti_didattici: TEXT; NOT NULLABLE
+	requisiti_temporali: VARCHAR(64); NOT NULLABLE
+	punteggio_massimo: TINYINT; NOT NULLABLE
+	punteggio_minimo: TINYINT; NOT NULLABLE
+	sede fisica: VARCHAR(128); NOT NULLABLE
+	materiale_didattico_richiesto: TEXT; NOT NULLABLE
+	minimo_ore_richieste: TINYINT; NOT NULLABLE
+	media_punteggio_richiesta: TINYINT; NOT NULLABLE
 
 - CORSO
 
-	Materia: VARCHAR(12); NOT NULLABLE
-	Modalità_corso: TEXT; NOT NULLABLE
-	Docente: VARCHAR(32); NOT NULLABLE
-	Anni_per_conseguimento_laurea: TINYINT; NOT NULLABLE
-	Numero_ore_obbligatorie:INT; NOT_NULLABLE
-	Numero_ore_totali: INT; NOT_NULLABLE
-	Argomenti_trattati: TEXT; NULLABLE
-	Durata_temporale: VARCHAR(12); NOT NULLABLE
-	Sede: VARCHAR(255); NULLABLE
-	Contatti: VARCHAR(32); NOT NULLABLE
+	materia: VARCHAR(12); NOT NULLABLE
+	modalità_corso: TEXT; NOT NULLABLE
+	docente: VARCHAR(32); NOT NULLABLE
+	anni_per_conseguimento_laurea: TINYINT; NOT NULLABLE
+	numero_ore_obbligatorie:INT; NOT_NULLABLE
+	numero_ore_totali: INT; NOT_NULLABLE
+	argomenti_trattati: TEXT; NULLABLE
+	durata_temporale: VARCHAR(12); NOT NULLABLE
+	sede: VARCHAR(255); NULLABLE
+	contatti: VARCHAR(32); NOT NULLABLE
 
 - INSEGNANTE:
 
-	Materia: VARCHAR(23); NOT NULLABLE
-	Nome: VARCHAR (23) ; NOT NULLABLE;
-	Cognome: VARCHAR (23) ; NOT NULLABLE;
-	Modalità_insegnamento: VARCHAR (128) ; NULLABLE;
-	Indirizzo_residenza: VARCHAR (255) ; NOT NULLABLE;
-	Riconoscimenti: TEXT; NULLABLE
-	Turni_lezioni: VARCHAR (200) ; NOT NULLABLE;
-	Corsi_gestiti: VARCHAR (125) ; NOT NULLABLE;
+	materia: VARCHAR(23); NOT NULLABLE
+	nome: VARCHAR (23) ; NOT NULLABLE;
+	cognome: VARCHAR (23) ; NOT NULLABLE;
+	modalità_insegnamento: VARCHAR (128) ; NULLABLE;
+	indirizzo_residenza: VARCHAR (255) ; NOT NULLABLE;
+	riconoscimenti: TEXT; NULLABLE
+	turni_lezioni: VARCHAR (200) ; NOT NULLABLE;
+	corsi_gestiti: VARCHAR (125) ; NOT NULLABLE;
 
-- Appello
-
-	Nome_Studente: VARCHAR (23) ; NOT NULLABLE;
-	Cognome_Studente: VARCHAR (23) ; NOT NULLABLE;
-	Materia: VARCHAR (12) ; NOT NULLABLE;
-	Punteggio: TINYINT; NOT NULLABLE
+- APPELLO:
+	
+	id_studente: INT; NOT NULLABLE
+	nome_Studente: VARCHAR (23) ; NOT NULLABLE;
+	cognome_Studente: VARCHAR (23) ; NOT NULLABLE;
+	materia: VARCHAR (12) ; NOT NULLABLE;
+	punteggio: TINYINT; NOT NULLABLE
 
 - STUDENTE
 
-	Nome: VARCHAR (23) ; NOT NULLABLE;
-	Cognome: VARCHAR (23) ; NOT NULLABLE;
-	Data_nascita: DATE; NOT NULLABLE;
-	Luogo_nascita: VARCHAR(23); NOT NULLABLE;
+	nome: VARCHAR (23) ; NOT NULLABLE;
+	cognome: VARCHAR (23) ; NOT NULLABLE;
+	data_nascita: DATE; NOT NULLABLE;
+	luogo_nascita: VARCHAR(23); NOT NULLABLE;
 	indirizzo_residenza: VARCHAR (128) ; NOT NULLABLE;
-	Contatti: VARCHAR(36); NOT NULLABLE
-	Carta_identità: VARCHAR(255); NOT NULLABLE
-	Patente: VARCHAR(255); NOT NULLABLE
-	Tessera_sanitaria: VARCHAR (50) ; NOT NULLABLE
-	Corsi_sottoscritti: VARCHAR(100); NOT NULLABLE
-	Docente_assegnato: VARCHAR(30); NULLABLE
-	Comportamento: TEXT; NOT NULLABLE
+	contatti: VARCHAR(36); NOT NULLABLE
+	carta_identità: VARCHAR(255); NOT NULLABLE
+	patente: VARCHAR(255); NOT NULLABLE
+	tessera_sanitaria: VARCHAR (50) ; NOT NULLABLE
+	corsi_sottoscritti: VARCHAR(100); NOT NULLABLE
+	docente_assegnato: VARCHAR(30); NULLABLE
+	comportamento: TEXT; NOT NULLABLE
 
 - ESITO
 
-	Assenze_totali: TINYINT; NOT NULLABLE
-	Presenze_totali: TINYINT; NOT NULLABLE
-	Media_punteggio_verifiche_scritte: TINYINT; NOT NULLABLE
-	Media_punteggio_verifiche_orali: TINYINT; NOT NULLABLE
-	Media_punteggio: TINYINT; NOT NULLABLE
+	assenze_totali: TINYINT; NOT NULLABLE
+	presenze_totali: TINYINT; NOT NULLABLE
+	media_punteggio_verifiche_scritte: TINYINT; NOT NULLABLE
+	media_punteggio_verifiche_orali: TINYINT; NOT NULLABLE
+	media_punteggio: TINYINT; NOT NULLABLE
 	
 	
 
