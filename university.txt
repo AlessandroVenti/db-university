@@ -1,0 +1,94 @@
+Sulla base di quanto visto a lezione modellizzare la realtà di un'università definendo colonne con nome, tipo di dato e vincoli di integrita' per queste entità:
+- dipartimento
+- corso di laurea
+- corso
+- insegnante
+- appello
+- studenti
+- esito
+
+Ogni dipartimento e' composto da corsi di laurea, formati da corsi, gestiti da insegnanti, che prevedono appelli per studenti, che avranno un esito finale
+NOTE: come detto in classe, in caso di ambiguità, cercare di immaginare una possibile realtà, e nel caso sia una scelta poco chiara, descriverla con poche parole
+
+
+- DIPARTIMENTO
+
+	Facoltà: VARCHAR(32) ; NOT NULLABLE
+	Descrizione:
+	Riconoscimenti:
+	Rating_digitale:
+	Requisiti:
+	Sede_fisica:
+	Contatti:
+
+- CORSO LAUREA
+
+	Modalità_laurea:
+	Requisiti_didattici:
+	Requisiti_temporali:
+	Punteggio_massimo:
+	Punteggio_minimo:
+	Sede fisica:
+	Materiale_didattico_richiesto:
+	Minimo_ore_richieste:
+	Media_punteggio_richiesta:
+
+- CORSO
+
+	Materia:
+	Modalità_corso:
+	Docente: 
+	Anni_per_conseguimento_laurea:
+	Numero_ore_obbligatorie:
+	Numero_ore_totali:
+	Argomenti_trattati:
+	Durata_temporale:
+	Sede:
+	Contatti:
+
+- INSEGNANTE:
+
+	Materia: 
+	Nome:
+	Cognome:
+	Modalità_insegnamento:
+	Indirizzo_residenza:
+	Riconoscimenti:
+	Turni_lezioni:
+	Corsi_gestiti:
+
+- Appello
+
+	Studente: 
+	Materia:
+	Punteggio:
+
+- STUDENTE
+
+	Nome:
+	Cognome:
+	Data_nascita:
+	Luogo_nascita
+	indirizzo_residenza:
+	Contatti:
+	Carta_identità:
+	Patente:
+	Tessera_sanitaria:
+	Corsi_sottoscritti:
+	Docente_assegnato:
+	Comportamento:
+
+- ESITO
+
+	Assenze_totali:
+	Presenze_totali:
+	Media_punteggio_verifiche_scritte:
+	Media_punteggio_verifiche_orali:
+	Media_punteggio
+	
+	
+
+
+
+
+
