@@ -1,4 +1,4 @@
-Sulla base di quanto visto a lezione modellizzare la realtà di un'università definendo colonne con nome, tipo di dato e vincoli di integrita' per queste entità:
++Sulla base di quanto visto a lezione modellizzare la realtà di un'università definendo colonne con nome, tipo di dato e vincoli di integrita' per queste entità:
 
 - dipartimento
 - corso di laurea
